@@ -11,7 +11,8 @@ declare class SDC {
         prefix,
         sanitise,
         errorHandler,
-        enforceRate
+        enforceRate,
+        auth
     }: {
         // StatsD host [127.0.0.1]
         host?: string,
@@ -46,6 +47,10 @@ declare class SDC {
         errorHandler?: Function,
         // Should I enforce rate (mark as false is rate was already enforced) [true]
         enforceRate?: boolean,
+        auth?: {
+            delimiter?: string,
+            password: string
+        }
     });
     count(key: string, value: number, rate?: number, tags?: string[]): void;
     time(key: string, value: number, rate?: number, tags?: string[]): void;

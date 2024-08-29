@@ -1,5 +1,5 @@
 {
-  "name": "@fiverr/statsd-client",
+  "name": "@connectalum/statsd-client",
   "version": "1.1.2",
   "description": "📈 A feature packed, highly customisable StatsD client",
   "keywords": [
@@ -16,13 +16,12 @@
     "udp",
     "📈"
   ],
-  "author": "Fiverr SRE",
+  "author": "ConnectAlum INC",
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/fiverr/node-statsd-client.git"
+    "url": "git+https://github.com/ConnectAlum/node-statsd-client.git"
   },
-  "homepage": "https://fiverr.github.io/node-statsd-client",
   "main": "index.js",
   "types": "index.d.ts",
   "scripts": {
@@ -39,5 +38,6 @@
     "eslint": "^7.20.0",
     "eslint-plugin-log": "^1.2.7",
     "mocha": "^8.3.0"
-  }
+  },
+  "packageManager": "pnpm@9.1.4+sha512.9df9cf27c91715646c7d675d1c9c8e41f6fce88246f1318c1aa6a1ed1aeb3c4f032fcdf4ba63cc69c4fe6d634279176b5358727d8f2cc1e65b65f43ce2f8bfb0"
 }

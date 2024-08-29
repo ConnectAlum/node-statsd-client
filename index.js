@@ -66,6 +66,7 @@ class SDC {
 	 * @param {Function} [options.sanitise=(default sanitiser)]
 	 * @param {Function} [options.errorHandler]
 	 * @param {Boolean}  [options.enforceRate=true]
+     * @param {Object}   [options.auth]
 	 */
     constructor(
         {
@@ -80,7 +81,8 @@ class SDC {
             prefix,
             sanitise,
             errorHandler,
-            enforceRate = true
+            enforceRate = true,
+            auth,
         } = {}
     ) {
         Object.assign(
@@ -98,14 +100,15 @@ class SDC {
                     port,
                     protocol,
                     protocol_version,
-                    errorHandler
+                    errorHandler,
+                    auth,
                 }),
                 format: formatter({
                     sanitise,
                     prefix,
                     scheme
                 }),
-                flush: flush.bind(this)
+                flush: flush.bind(this),
             }
         );
 
